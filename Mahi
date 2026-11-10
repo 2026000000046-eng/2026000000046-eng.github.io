@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- ✏️ ১. নিচের title বদলাও -->
+<title>আপনার নাম | Portfolio</title>
+<style>
+  :root { --bg:#f3f6fb; --card:#ffffff; --ink:#14213d; --muted:#5b6784; --accent:#2f5bea; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0e1424; --card:#18203a; --ink:#e8ecf8; --muted:#9aa5c4; --accent:#7c9cff; }
+  }
+  * { box-sizing:border-box; margin:0; }
+  body { font-family:system-ui,-apple-system,"Segoe UI",sans-serif; background:var(--bg); color:var(--ink); line-height:1.7; }
+  main { max-width:640px; margin:0 auto; padding:48px 20px 64px; }
+  h1 { font-size:2.4rem; line-height:1.2; }
+  h2 { font-size:1.2rem; margin:40px 0 12px; border-left:4px solid var(--accent); padding-left:10px; }
+  p.sub { color:var(--muted); font-size:1.1rem; margin-top:8px; }
+  .chips { display:flex; flex-wrap:wrap; gap:8px; }
+  .chips span { background:var(--card); border:1px solid var(--accent); padding:4px 14px; border-radius:99px; font-size:.95rem; }
+  .project { background:var(--card); border-radius:10px; padding:16px; margin-bottom:12px; }
+  .project h3 { font-size:1.05rem; }
+  .project p { color:var(--muted); font-size:.95rem; }
+  a { color:var(--accent); font-weight:600; }
+  ul { list-style:none; padding:0; }
+  li { margin-bottom:6px; }
+</style>
+</head>
+<body>
+<main>
+
+  <!-- ✏️ ২. তোমার নাম আর এক লাইনের পরিচয় -->
+  <h1>আপনার নাম</h1>
+  <p class="sub">CSE-র প্রথম বর্ষের ছাত্র | কোডিং শিখছি</p>
+
+  <!-- ✏️ ৩. নিজের সম্পর্কে ২-৩ লাইন -->
+  <h2>আমার সম্পর্কে</h2>
+  <p>আমি [তোমার ইউনিভার্সিটির নাম]-এ Computer Science and Engineering পড়ছি। প্রোগ্রামিং শিখতে এবং ছোট ছোট প্রজেক্ট বানাতে ভালোবাসি।</p>
+
+  <!-- ✏️ ৪. যা যা শিখেছ বা শিখছ, সেগুলো লেখো -->
+  <h2>স্কিলস</h2>
+  <div class="chips">
+    <span>C</span>
+    <span>Python</span>
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>Git &amp; GitHub</span>
+  </div>
+
+  <!-- ✏️ ৫. প্রজেক্ট থাকলে লেখো। না থাকলে এই অংশ মুছে দাও -->
+  <h2>প্রজেক্ট</h2>
+  <div class="project">
+    <h3>প্রজেক্টের নাম</h3>
+    <p>এক লাইনে বলো প্রজেক্টটা কী করে। <a href="#">GitHub লিংক</a></p>
+  </div>
+  <div class="project">
+    <h3>আরেকটি প্রজেক্ট</h3>
+    <p>এখানে বর্ণনা লেখো। <a href="#">GitHub লিংক</a></p>
+  </div>
+
+  <!-- ✏️ ৬. নিজের লিংকগুলো বসাও -->
+  <h2>যোগাযোগ</h2>
+  <ul>
+    <li>Email: <a href="mailto:you@example.com">you@example.com</a></li>
+    <li>GitHub: <a href="https://github.com/your-username">github.com/your-username</a></li>
+    <li>LinkedIn: <a href="https://linkedin.com/in/your-name">linkedin.com/in/your-name</a></li>
+  </ul>
+
+</main>
+</body>
+</html>
